@@ -1,0 +1,85 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFFFF"
+        android:orientation="vertical" >
+
+        <com.ezetap.utils.MyTextView
+            android:id="@+id/new_version_available"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF000000"
+            android:ems="10"
+            android:gravity="left|center_vertical"
+            android:padding="8dp"
+            android:text="A new version of the application is available"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <com.ezetap.utils.MyTextView
+            android:id="@+id/version_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_version_available"
+            android:background="#FF000000"
+            android:ems="10"
+            android:gravity="left|center_vertical"
+            android:padding="8dp"
+            android:text="Version "
+            android:textColor="#FFFFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+     <ScrollView   
+	     android:id="@+id/ScrollView01"  
+	     android:layout_height="wrap_content"   
+	     android:layout_width="fill_parent"
+	     android:layout_below="@+id/version_info"
+	     android:layout_above="@+id/update_version_btns_view">
+
+        <com.ezetap.utils.MyTextView
+            android:id="@+id/update_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.83"
+            android:background="#FFCCCCCC"
+            android:ems="10"
+            android:gravity="left"
+            android:minHeight="240dp"
+            android:padding="8dp"
+            android:text="Info"
+            android:textColor="#FF000000"
+            android:textSize="12sp" />
+
+      </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/update_version_btns_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="8dp" >
+
+            <com.ezetap.utils.MyButton
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.11"
+                android:gravity="center"
+                android:onClick="okClicked"
+                android:text="Update"
+                android:textColor="#FF000000"
+                android:textStyle="bold" />
+
+            <com.ezetap.utils.MyButton
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.11"
+                android:onClick="cancelClicked"
+                android:text="Cancel" 
+                android:textColor="#FF000000"/>
+        </LinearLayout>
+    </RelativeLayout>

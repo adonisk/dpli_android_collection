@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="header_gradient_top">#000000</color>
+    <color name="header_gradient_center">#343434</color>
+    <color name="header_gradient_bottom">#000000</color>
+    <color name="receipt_body_background">#FFFFFF</color>
+    <color name="norm1">#223344</color>
+    <color name="norm2">#375d82</color>
+    <color name="pressed1">#0a2a4b</color>
+    <color name="pressed2">#095db3</color>
+    <color name="eze_red">#FF0000</color>
+    <color name="eze_black">#000000</color>
+    <color name="eze_green">#489652</color>
+    <color name="eze_light_green">#68ff7b</color>
+    <color name="eze_orange">#FAA125</color>
+    <color name="eze_blue">#8276F5</color>
+    <color name="eze_white">#FFFFFF</color>
+    <color name="eze_light_gray">#AABBCC</color>
+    <color name="light_gray">#AABBCC</color>
+    <color name="eze_gray">#7c7c7c</color>
+    <color name="eze_dark_gray">#445566</color>
+    <color name="focu1">#4167a7</color>
+    <color name="focu2">#234578</color>
+    <color name="stro2">#aabbcc</color>
+
+    <style name="TextAppearance.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="TextAppearance">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorHighlight">#FFFF9200</item>
+        <item name="android:textColorHint">#FFFFFF</item>
+        <item name="android:textColorLink">#5C5CFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="screen_title" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

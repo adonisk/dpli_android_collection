@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.ezetap.utils.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <com.ezetap.utils.MyButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="initDevice"
+        android:text="Initialize Device" />
+
+    <com.ezetap.utils.MyButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="skipInitDevice"
+        android:text="Skip" />
+
+</RelativeLayout>

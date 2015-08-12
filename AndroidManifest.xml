@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dpli"
+    android:versionCode="11"
+    android:versionName="1.0" >
+    
+    <uses-sdk android:minSdkVersion="10" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"  android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.dpli.LogintoDPLI"
+            android:label="@string/app_name" android:windowSoftInputMode="adjustPan" android:configChanges="orientation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        	<activity android:name="com.dpli.FetchPolicy" android:windowSoftInputMode="adjustPan" android:configChanges="keyboardHidden|orientation"></activity>
+        	<activity android:name="com.dpli.ReviewPolicy" android:windowSoftInputMode="adjustPan" android:configChanges="keyboardHidden|orientation"></activity>
+        	<activity android:name="com.dpli.PaymentOptions" android:windowSoftInputMode="adjustPan" android:configChanges="keyboardHidden|orientation"></activity>
+        	<activity android:name="com.dpli.ChequeDetails" android:windowSoftInputMode="adjustPan" android:configChanges="keyboardHidden|orientation"></activity>
+        	<activity android:name="com.dpli.BankSelection" android:windowSoftInputMode="adjustPan" android:configChanges="keyboardHidden|orientation"></activity>
+        	<activity android:name="com.dpli.SendReceipt" android:windowSoftInputMode="adjustPan" android:configChanges="keyboardHidden|orientation"></activity>
+        	<activity android:name="com.dpli.About" android:windowSoftInputMode="adjustPan" android:configChanges="keyboardHidden|orientation"></activity>
+        	<activity android:name="com.dpli.TransactionHistory" android:windowSoftInputMode="adjustPan" android:configChanges="keyboardHidden|orientation"></activity>
+        	<activity android:name="com.dpli.TransactionDetail" android:windowSoftInputMode="adjustPan" android:configChanges="keyboardHidden|orientation"></activity>
+        	<activity android:name="com.dpli.Summary" android:windowSoftInputMode="adjustPan" android:configChanges="keyboardHidden|orientation"></activity>
+        	<activity android:name="com.dpli.ReSendReceipt" android:windowSoftInputMode="adjustPan" android:configChanges="keyboardHidden|orientation"></activity>
+        	<activity android:name="com.ezetap.android.api.caller.helper.DummyUpdate" android:configChanges="orientation" android:theme="@android:style/Theme.NoDisplay"></activity>
+        	<activity android:name="com.ezetap.android.api.caller.helper.EzetapUpdateActivity" android:configChanges="orientation" android:theme="@android:style/Theme.NoDisplay"></activity>
+        	<activity android:name="com.ezetap.android.api.caller.helper.EzetapUpdateDetailActivity" android:configChanges="orientation"></activity>
+        	<activity android:name="com.ezetap.android.api.caller.helper.demomode.DummyActivity" android:configChanges="orientation" android:theme="@android:style/Theme.NoDisplay"></activity>
+        	<activity android:name="com.ezetap.android.api.caller.helper.service.ExtApiServiceActivity" android:configChanges="orientation" android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        	<activity android:name="com.ezetap.android.api.caller.helper.service.AddToCartActivity" android:configChanges="orientation" android:theme="@android:style/Theme.NoDisplay"></activity>
+        	<activity android:name="com.ezetap.android.api.caller.helper.service.ItemDetailActvity" android:configChanges="orientation" android:theme="@android:style/Theme.NoDisplay"></activity>
+        	<activity android:name="com.ezetap.android.api.caller.helper.service.RemoveFromCartActivity" android:configChanges="orientation" android:theme="@android:style/Theme.NoDisplay"></activity>
+        	<activity android:name="com.ezetap.android.api.caller.helper.TodoDetailActivity" android:configChanges="orientation" android:theme="@android:style/Theme.NoDisplay"></activity>
+        	<activity android:name="com.ezetap.android.api.caller.helper.DeliveryStatusActivity" android:configChanges="orientation" android:theme="@android:style/Theme.NoDisplay"></activity>
+        	<activity android:name="com.ezetap.android.api.caller.helper.ReturnsStatusActivity" android:configChanges="orientation" android:theme="@android:style/Theme.NoDisplay"></activity>
+        	<activity android:name="com.ezetap.android.api.caller.helper.TransactionDetailActivity" android:configChanges="orientation" android:theme="@android:style/Theme.NoDisplay"></activity>
+        	<activity android:name="com.ezetap.android.api.caller.helper.service.FetchAllDetailsActivity" android:configChanges="orientation" android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        	<activity android:name="com.ezetap.android.api.caller.helper.FetchDummyPolicyDetailsActivity" android:configChanges="orientation" android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        	<activity android:name="com.ezetap.android.api.caller.helper.FetchCustomerDetailsHelper" android:configChanges="orientation" android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        	<activity android:name="com.ezetap.android.api.caller.helper.FetchAboutDetailsHelper" android:configChanges="orientation" android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        	<activity android:name="com.ezetap.utils.EzetapDownloadActivity" android:configChanges="orientation" android:theme="@android:style/Theme.NoDisplay"></activity>
+        	<activity android:name="com.ezetap.utils.CalendarView" android:configChanges="orientation" android:theme="@android:style/Theme.Dialog"/>
+        	<activity android:name="com.ezetap.android.api.caller.helper.FeedbackHelperActivity" android:configChanges="orientation" android:theme="@android:style/Theme.Dialog"/>
+        	<activity android:name="com.ezetap.android.api.caller.helper.FetchViolationsActivity" android:configChanges="orientation" android:theme="@android:style/Theme.NoDisplay"></activity>
+        	<activity android:name="com.ezetap.android.api.caller.helper.ViolationDetailActivity" android:configChanges="orientation" android:theme="@android:style/Theme.NoDisplay"></activity>
+        	<activity android:name="com.ezetap.android.api.caller.helper.FetchDetailActivity" android:configChanges="orientation" android:theme="@android:style/Theme.NoDisplay"></activity>
+			<activity android:name="com.ezetap.android.api.caller.helper.DatabaseHelper" android:configChanges="orientation" android:theme="@android:style/Theme.NoDisplay"></activity>
+        	<activity android:name="com.dpli.api.caller.helper.FetchPolicyHelper" android:configChanges="orientation" android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+    </application>
+
+</manifest>
